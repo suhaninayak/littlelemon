@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Me</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+          Based in Mumbai, India, Little Lemon is a family-owned  
+          Mediterranean-Indian fusion restaurant, focused on traditional recipes  
+          served with a modern twist.
+        </p>
+        
+        <p>
+          The chef, Leonardo Nair, raised in an Italian-Indian household,  
+          inherited his love for food from his father, an Italian chef, and his mother,  
+          an Indian home cook. Their diverse culinary traditions inspired him to create  
+          a unique menu blending the bold flavors of both regions.
+        </p>
+        
+        <p>
+          The restaurant has a warm and inviting ambiance with moderate prices,  
+          making it a popular spot for both locals and travelers seeking an  
+          authentic yet innovative dining experience.
+        </p>
+        
+        <p>
+          Little Lemon is Chef Leonardo's passion project, born from his journey of  
+          embracing both his Italian heritage and his deep connection to Indian cuisine.  
+          After training in Italy, he moved to India to bring this fusion concept to life.  
+        </p>
+        
+        <p>
+          Drawing from his family recipes and years of experience, he curates a  
+          seasonal menu that beautifully marries Mediterranean staples with  
+          Indian spices and techniques.
+        </p>
+        
+        <p>
+          To introduce this unique blend to a wider audience, he spearheaded a  
+          marketing campaign that celebrates the restaurant's fusion concept,  
+          making Little Lemon a beloved culinary destination.
+        </p>
+
+        <p>
+          Join us at Little Lemon for a delightful culinary journey that  
+          transcends borders and tantalizes your taste buds.        
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/head chef.png' %}"
+            alt="Owner Leonardo"
+          />
+          <figcaption class="figure-caption">
+            Little Lemon owner Leonardo.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}

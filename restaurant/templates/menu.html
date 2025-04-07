@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Menu</h1>
+
+<!-- Begin Column -->
+<div class="column">
+    {% for category, items in menu.items %}  <!-- Ensure proper looping -->
+    <h2>{{ category }}</h2> <!-- Display Category Name -->
+    
+    {% for item in items %}
+    <div class="menu-item">
+        <p>
+            <a href="{% url 'menu_item' pk=item.pk %}">
+                {{ item.name }}
+            </a>
+            <span class="menu-price">
+                ₹{{ item.price }}
+            </span>
+        </p>
+        <p>{{ item.description }}</p> <!-- Show Description -->
+
+        {% if item.image %}
+        <img src="{{ item.image.url }}" alt="{{ item.name }}" width="150">
+        {% endif %}
+    </div>
+    {% endfor %}  <!-- End inner loop for items -->
+
+    {% endfor %}  <!-- End outer loop for categories -->
+</div>
+<!-- End Column -->
+
+{% endblock %}
