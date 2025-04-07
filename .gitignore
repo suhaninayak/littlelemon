@@ -1,0 +1,23 @@
+# Ignore virtual environment
+django/
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Django
+**/migrations/
+db.sqlite3
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Others
+*.log
+staticfiles/
