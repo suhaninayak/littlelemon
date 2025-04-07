@@ -32,7 +32,7 @@ This is a Django web application for **Little Lemon**, an Indo-Italian fusion re
 ## ✅ How to Run the Project
 
 1. **Clone the Repository**:
-     git clone https://github.com/yourusername/littlelemon.git
+     git clone https://github.com/suhaninayak/littlelemon.git
      cd littlelemon
 3. **Create a virtual environment**:
       python -m venv django
